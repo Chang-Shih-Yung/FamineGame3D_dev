@@ -1,0 +1,178 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/henrychang/Desktop/Unity/FamineGame3D/Assembly-CSharp.csproj": {}
+  },
+  "projects": {
+    "/Users/henrychang/Desktop/Unity/FamineGame3D/Assembly-CSharp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/henrychang/Desktop/Unity/FamineGame3D/Assembly-CSharp.csproj",
+        "projectName": "Assembly-CSharp",
+        "projectPath": "/Users/henrychang/Desktop/Unity/FamineGame3D/Assembly-CSharp.csproj",
+        "packagesPath": "/Users/henrychang/.nuget/packages/",
+        "outputPath": "/Users/henrychang/Desktop/Unity/FamineGame3D/Temp/obj/Debug/Assembly-CSharp/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/henrychang/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "/Users/henrychang/Desktop/Unity/FamineGame3D/UnityEditor.UI.csproj": {
+                "projectPath": "/Users/henrychang/Desktop/Unity/FamineGame3D/UnityEditor.UI.csproj"
+              },
+              "/Users/henrychang/Desktop/Unity/FamineGame3D/UnityEngine.UI.csproj": {
+                "projectPath": "/Users/henrychang/Desktop/Unity/FamineGame3D/UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/henrychang/Desktop/Unity/FamineGame3D/UnityEditor.UI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/henrychang/Desktop/Unity/FamineGame3D/UnityEditor.UI.csproj",
+        "projectName": "UnityEditor.UI",
+        "projectPath": "/Users/henrychang/Desktop/Unity/FamineGame3D/UnityEditor.UI.csproj",
+        "packagesPath": "/Users/henrychang/.nuget/packages/",
+        "outputPath": "/Users/henrychang/Desktop/Unity/FamineGame3D/Temp/obj/Debug/UnityEditor.UI/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/henrychang/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "/Users/henrychang/Desktop/Unity/FamineGame3D/UnityEngine.UI.csproj": {
+                "projectPath": "/Users/henrychang/Desktop/Unity/FamineGame3D/UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/henrychang/Desktop/Unity/FamineGame3D/UnityEngine.UI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/henrychang/Desktop/Unity/FamineGame3D/UnityEngine.UI.csproj",
+        "projectName": "UnityEngine.UI",
+        "projectPath": "/Users/henrychang/Desktop/Unity/FamineGame3D/UnityEngine.UI.csproj",
+        "packagesPath": "/Users/henrychang/.nuget/packages/",
+        "outputPath": "/Users/henrychang/Desktop/Unity/FamineGame3D/Temp/obj/Debug/UnityEngine.UI/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/henrychang/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

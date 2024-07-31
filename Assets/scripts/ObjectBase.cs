@@ -9,7 +9,7 @@ public class ObjectBase : MonoBehaviour
     [SerializeField] AudioSource audioSource;
     //列表：存放音效
     [SerializeField] List<AudioClip> audioClips;
-    public GameObject lootObject;
+    public GameObject lootObject; //掉落物品
 
     [SerializeField] float hp;
     //重構：將hp改為屬性
