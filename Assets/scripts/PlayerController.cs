@@ -58,7 +58,7 @@ public class PlayerController : ObjectBase
         //初始化身上的攻擊檢測器，知道this是玩家 、然後給予30點傷害
         if (checkCollider != null)
         {   //this=PlayerController，30是傷害值
-            checkCollider.Init(GetComponent<PlayerController>(), 30);
+            checkCollider.Init(this, 30);
         }
         else
         {
