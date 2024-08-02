@@ -3,12 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+//PlayerController繼承ObjectBase，這裡的protected方法可以被PlayerController使用
 public class PlayerController : ObjectBase
 {
     //單例模式，这个 instance 变量确保 PlayerController 类只有一个实例，並且可以全局訪問
     public static PlayerController instance;
     //初始化：使用Animator這個元件
     [SerializeField] Animator animator;
+
+    //初始化：可以在面板拖拉使用CheckCollider這個元件
+    [SerializeField] CheckCollider checkCollider;
+
     //初始化：使用CharacterController這個元件
     [SerializeField] CharacterController characterController;
 
@@ -48,8 +53,17 @@ public class PlayerController : ObjectBase
 
 
     void Awake()
-    {
+    {   //this的意思是這個物件，這個物件是PlayerController
         instance = this;
+        //初始化身上的攻擊檢測器，知道this是玩家 、然後給予30點傷害
+        if (checkCollider != null)
+        {   //this=PlayerController，30是傷害值
+            checkCollider.Init(GetComponent<PlayerController>(), 30);
+        }
+        else
+        {
+            Debug.LogError("CheckCollider not found in children");
+        }
 
     }
     private void Update()
@@ -134,7 +148,7 @@ public class PlayerController : ObjectBase
     //Hp是ObjectBase裡面的屬性，所以這邊可以調用
     protected override void OnHpUpdate()
     {
-        //更新UI
+        //更新血條UI
         HpImage.fillAmount = Hp / 100;
     }
 
@@ -146,13 +160,14 @@ public class PlayerController : ObjectBase
         //播放音效
         PlayAudio(0);
         //攻擊檢測
+        checkCollider.StartHit();
 
     }
 
     private void StopHit()
     {
         //停止攻擊檢測
-
+        checkCollider.StopHit();
         //攻擊結束，回到原本的狀態
         isAttacking = false;
     }

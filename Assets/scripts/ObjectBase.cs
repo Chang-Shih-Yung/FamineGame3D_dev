@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//ObjectBase是所有物件的核心基底類別，無指定對象～供有繼承的大家使用
 public class ObjectBase : MonoBehaviour
 {
 
@@ -41,8 +42,8 @@ public class ObjectBase : MonoBehaviour
 
     }
     //當hp變化時自動調用
-    //PlayerController中的OnHpUpdate方法，可以傳遞傳重寫的方法回來
-    //當然PlayerController中的方法會跟這裡疊加（假設這裡有定義一些的話）
+    //PlayerController中的OnHpUpdate方法，就是繼承這個方法～
+    //當然PlayerController中的方法會用這裡的方法下去疊加（假設這裡有定義一些的話）
     protected virtual void OnHpUpdate()
     {
 
@@ -54,6 +55,12 @@ public class ObjectBase : MonoBehaviour
     protected virtual void Dead()
     {
         //播放死亡音效
+    }
+
+    //受傷方法，在碰撞檢測腳本那邊調用
+    public virtual void Hurt(int damage){
+        Hp -= damage;
+      
     }
 
 }
