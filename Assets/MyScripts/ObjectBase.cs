@@ -10,6 +10,8 @@ public class ObjectBase : MonoBehaviour
     [SerializeField] AudioSource audioSource;
     //列表：存放音效
     [SerializeField] List<AudioClip> audioClips;
+
+    
     public GameObject lootObject; //掉落物品
 
     [SerializeField] float hp;
@@ -41,6 +43,12 @@ public class ObjectBase : MonoBehaviour
         audioSource.PlayOneShot(audioClips[index]);
 
     }
+
+    //死亡音效  
+    protected virtual void PlayAudioDead(int index)
+    {
+        audioSource.PlayOneShot(audioClips[0]);
+    }
     //當hp變化時自動調用
     //PlayerController中的OnHpUpdate方法，就是繼承這個方法～
     //當然PlayerController中的方法會用這裡的方法下去疊加（假設這裡有定義一些的話）
@@ -54,7 +62,7 @@ public class ObjectBase : MonoBehaviour
     //virtual是虛擬方法，可以被繼承的類重寫
     protected virtual void Dead()
     {
-        //播放死亡音效
+        
     }
 
     //受傷方法，在碰撞檢測腳本那邊調用
