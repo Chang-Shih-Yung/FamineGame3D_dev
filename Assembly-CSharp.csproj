@@ -66,20 +66,21 @@
   <ItemGroup>
     <Compile Include="Assets/Photon/PhotonRealtime/Demos/DemoLoadBalancing/ConnectAndJoinRandomLb.cs" />
     <Compile Include="Assets/Res/粒子火/LightControl.cs" />
-    <Compile Include="Assets/scripts/CameraController.cs" />
     <Compile Include="Assets/Photon/PhotonChat/Demos/DemoChat/AppSettingsExtensions.cs" />
-    <Compile Include="Assets/scripts/CheckCollider.cs" />
+    <Compile Include="Assets/MyScripts/CheckCollider.cs" />
     <Compile Include="Assets/Photon/PhotonChat/Demos/Common/OnStartDelete.cs" />
     <Compile Include="Assets/Photon/PhotonChat/Demos/DemoChat/ChatGui.cs" />
     <Compile Include="Assets/Res/食物/Low Poly Fast Food/Demo/Scripts/Spin.cs" />
+    <Compile Include="Assets/MyScripts/CameraController.cs" />
     <Compile Include="Assets/Photon/PhotonChat/Demos/DemoChat/ChannelSelector.cs" />
     <Compile Include="Assets/Photon/PhotonChat/Demos/DemoChat/ChatAppIdCheckerUI.cs" />
     <Compile Include="Assets/Photon/PhotonChat/Demos/Common/TextToggleIsOnTransition.cs" />
     <Compile Include="Assets/Photon/PhotonChat/Demos/DemoChat/FriendItem.cs" />
-    <Compile Include="Assets/scripts/PlayerController.cs" />
+    <Compile Include="Assets/MyScripts/ObjectBase.cs" />
+    <Compile Include="Assets/MyScripts/Tree_Controller.cs" />
+    <Compile Include="Assets/MyScripts/PlayerController.cs" />
     <Compile Include="Assets/Photon/PhotonChat/Demos/DemoChat/IgnoreUiRaycastWhenInactive.cs" />
     <Compile Include="Assets/Photon/PhotonChat/Demos/Common/EventSystemSpawner.cs" />
-    <Compile Include="Assets/scripts/ObjectBase.cs" />
     <Compile Include="Assets/Photon/PhotonChat/Demos/DemoChat/NamePickGui.cs" />
     <Compile Include="Assets/Photon/PhotonChat/Demos/Common/TextButtonTransition.cs" />
   </ItemGroup>

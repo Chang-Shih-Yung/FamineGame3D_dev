@@ -368,6 +368,11 @@
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.ref.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/2022.3.16f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/2022.3.16f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
+"Assets/MyScripts/CameraController.cs"
+"Assets/MyScripts/CheckCollider.cs"
+"Assets/MyScripts/ObjectBase.cs"
+"Assets/MyScripts/PlayerController.cs"
+"Assets/MyScripts/Tree_Controller.cs"
 "Assets/Photon/PhotonChat/Demos/Common/EventSystemSpawner.cs"
 "Assets/Photon/PhotonChat/Demos/Common/OnStartDelete.cs"
 "Assets/Photon/PhotonChat/Demos/Common/TextButtonTransition.cs"
@@ -382,10 +387,6 @@
 "Assets/Photon/PhotonRealtime/Demos/DemoLoadBalancing/ConnectAndJoinRandomLb.cs"
 "Assets/Res/粒子火/LightControl.cs"
 "Assets/Res/食物/Low Poly Fast Food/Demo/Scripts/Spin.cs"
-"Assets/scripts/CameraController.cs"
-"Assets/scripts/CheckCollider.cs"
-"Assets/scripts/ObjectBase.cs"
-"Assets/scripts/PlayerController.cs"
 -langversion:9.0
 
 /deterministic
