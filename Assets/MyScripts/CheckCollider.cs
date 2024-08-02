@@ -35,13 +35,16 @@ public class CheckCollider : MonoBehaviour
     public void StopHit()
     {
         canAttack = false;
+        //清空傷害過的物件列表，回到初始狀態，這樣再次攻擊才會被觸發
+        hitList.Clear();
     }
     //建立傷害過的物件列表
     private List<GameObject> hitList = new List<GameObject>();
 
     //碰撞、傷害檢測方法
     //other是碰撞到的物件
-    private void OnTriggerEnter(Collider other)
+    //OnTriggerStay是一個碰撞事件，當碰撞到的物件停留在碰撞範圍內時，就會觸發這個事件
+    private void OnTriggerStay(Collider other)
     {
 
         //可以攻擊的條件
