@@ -11,7 +11,7 @@ public class ObjectBase : MonoBehaviour
     //列表：存放音效
     [SerializeField] List<AudioClip> audioClips;
 
-    
+
     public GameObject lootObject; //掉落物品
 
     [SerializeField] float hp;
@@ -62,13 +62,21 @@ public class ObjectBase : MonoBehaviour
     //virtual是虛擬方法，可以被繼承的類重寫
     protected virtual void Dead()
     {
-        
+        if (lootObject != null)
+        {
+            //實例化物體，讓樹枝從上方掉落
+            Instantiate(lootObject,
+            //隨機範圍位置
+            transform.position + new Vector3(Random.Range(-0.5f, 0.5f), Random.Range(1f, 1.2f), Random.Range(-0.5f, 0.5f)),
+            Quaternion.Euler(Random.Range(0, 360), Random.Range(0, 360), Random.Range(0, 360)));
+        }
     }
 
     //受傷方法，在碰撞檢測腳本那邊調用
-    public virtual void Hurt(int damage){
+    public virtual void Hurt(int damage)
+    {
         Hp -= damage;
-      
+
     }
 
 }

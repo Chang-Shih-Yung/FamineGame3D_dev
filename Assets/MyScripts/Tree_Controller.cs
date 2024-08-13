@@ -10,7 +10,7 @@ public class Tree : ObjectBase
     {
         //設定樹的血量
         //來自基類ObjectBase的HP定義，這邊直接複用
-        Hp = 200;
+        Hp = 100;
     }
     public override void Hurt(int damage)
     {
@@ -21,8 +21,11 @@ public class Tree : ObjectBase
     }
     protected override void Dead()
     {
-        //base是指ObjectBase這個基類，不改動
+        //base是指ObjectBase這個基類，有什麼調用什麼，不改動
+        //所以也就傳遞了實例化樹枝且掉落的方法
         base.Dead();
+
+        //以下是在這裡新增的功能
         //播放死亡音效
         PlayAudioDead(0);
         //延遲播放死亡音效
@@ -37,7 +40,6 @@ public class Tree : ObjectBase
         // 確保音效播放完成，可以根據音效的時長設置等待時間
         // 這裡假設死亡音效的時長為2秒
         yield return new WaitForSeconds(0.5f);
-
         // 銷毀遊戲物件
         Destroy(gameObject);
     }
