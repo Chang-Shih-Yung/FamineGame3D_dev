@@ -12,7 +12,7 @@ public class CheckCollider : MonoBehaviour
     private ObjectBase Owner;
     //傷害值
     private int damage;
-    private bool canAttack = false;
+    private bool canHit = false;
     //敵人的標籤list
     [SerializeField] List<string> enemyTags = new List<string>();
     //可被拾取的標籤list
@@ -31,12 +31,12 @@ public class CheckCollider : MonoBehaviour
     //開啟傷害檢測
     public void StartHit()
     {
-        canAttack = true;
+        canHit = true;
     }
     //關閉傷害檢測
     public void StopHit()
     {
-        canAttack = false;
+        canHit = false;
         //清空傷害過的物件列表，回到初始狀態，這樣再次攻擊才會被觸發
         hitList.Clear();
     }
@@ -50,7 +50,7 @@ public class CheckCollider : MonoBehaviour
     {
 
         //可以攻擊的條件
-        if (canAttack)
+        if (canHit)
         {
             //此次傷害還沒有檢測過的單位 && 敵人標籤列表中的物件標籤
             //講簡單點：如果碰撞到的物件不在清單中，且是有敵人標籤的話
