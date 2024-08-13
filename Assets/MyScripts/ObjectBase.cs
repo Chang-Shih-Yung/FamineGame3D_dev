@@ -36,7 +36,7 @@ public class ObjectBase : MonoBehaviour
 
 
     //PlayerController繼承ObjectBase，所以這裡的protected方法可以被PlayerController使用
-    protected void PlayAudio(int index)
+    public void PlayAudio(int index)
     {
         //PlayOneShot播放一次音效，不會被打斷
         //audioClips[index]是從列表中選擇音效
@@ -68,7 +68,7 @@ public class ObjectBase : MonoBehaviour
             Instantiate(lootObject,
             //隨機範圍位置
             transform.position + new Vector3(Random.Range(-0.5f, 0.5f), Random.Range(1f, 1.2f), Random.Range(-0.5f, 0.5f)),
-            Quaternion.Euler(Random.Range(0, 360), Random.Range(0, 360), Random.Range(0, 360)));
+            Quaternion.identity);
         }
     }
 

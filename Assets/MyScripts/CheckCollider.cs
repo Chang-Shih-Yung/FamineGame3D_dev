@@ -13,8 +13,10 @@ public class CheckCollider : MonoBehaviour
     //傷害值
     private int damage;
     private bool canAttack = false;
-    //敵人的標籤
+    //敵人的標籤list
     [SerializeField] List<string> enemyTags = new List<string>();
+    //可被拾取的標籤list
+    [SerializeField] List<string> itemTags = new List<string>();
 
     //初始化方法，可以從其他腳本傳入攻擊者和傷害值，目前是在角色底下，所以從PlayerController給值傳入
     //如果放在怪物物件底下，那到時傳進來的就是怪物和傷害值，所以可以知道這個碰撞傷害腳本是可複用的
@@ -60,8 +62,19 @@ public class CheckCollider : MonoBehaviour
                 //這裡意思很明白，到時候碰到的物件（遊戲怪物）就調用Hurt方法，傷害值是damage。所以在ObjectBase扣的HP到時就是遊戲怪物
                 other.GetComponent<ObjectBase>().Hurt(damage);
             }
+            return;
         }
 
+        //檢測拾取物品
+        //看unity控制面板中itemTag欄位的有哪些tags
+        if (itemTags.Contains(other.tag))
+        {
+            //調用ObjectBase中的PlayAudio方法，播放音效。告訴宿主播放音效
+            //這裡就是寫死
+            Owner.PlayAudio(1);
+            Destroy(other.gameObject);//銷毀撿到的物品
 
+        }
     }
 }
+
