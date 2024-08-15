@@ -15,10 +15,11 @@ public class ObjectBase : MonoBehaviour
     public GameObject lootObject; //掉落物品
 
     [SerializeField] float hp;
-    //重構：將hp改為屬性
+    //重構：將hp改為屬性Hp，其他地方可以直接使用包含邏輯的Hp
     //核心觀念：當hp修改時，會觸發set方法，進而觸發Dead方法，也就是死亡/hp更新
     public float Hp
-    {
+    {   
+        //抓取原始變量，拿來加上一些自己的邏輯
         get => hp;
         set
         {
