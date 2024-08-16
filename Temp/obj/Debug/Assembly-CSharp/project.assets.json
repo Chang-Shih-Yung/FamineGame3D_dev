@@ -1,0 +1,357 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETStandard,Version=v2.1": {
+      "PhotonChat/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PhotonChat.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PhotonChat.dll": {}
+        }
+      },
+      "PhotonRealtime/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PhotonRealtime.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PhotonRealtime.dll": {}
+        }
+      },
+      "PhotonUnityNetworking/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "PhotonRealtime": "1.0.0",
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PhotonUnityNetworking.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PhotonUnityNetworking.dll": {}
+        }
+      },
+      "PhotonUnityNetworking.Demos/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "PhotonRealtime": "1.0.0",
+          "PhotonUnityNetworking": "1.0.0",
+          "PhotonUnityNetworking.Utilities": "1.0.0",
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PhotonUnityNetworking.Demos.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PhotonUnityNetworking.Demos.dll": {}
+        }
+      },
+      "PhotonUnityNetworking.Editor/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "PhotonRealtime": "1.0.0",
+          "PhotonUnityNetworking": "1.0.0",
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PhotonUnityNetworking.Editor.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PhotonUnityNetworking.Editor.dll": {}
+        }
+      },
+      "PhotonUnityNetworking.Utilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "PhotonRealtime": "1.0.0",
+          "PhotonUnityNetworking": "1.0.0",
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PhotonUnityNetworking.Utilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PhotonUnityNetworking.Utilities.dll": {}
+        }
+      },
+      "PhotonUnityNetworking.Utilities.Culling.Editor/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "PhotonUnityNetworking.Utilities": "1.0.0",
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PhotonUnityNetworking.Utilities.Culling.Editor.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PhotonUnityNetworking.Utilities.Culling.Editor.dll": {}
+        }
+      },
+      "PhotonUnityNetworking.Utilities.PhotonPlayer.Editor/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "PhotonRealtime": "1.0.0",
+          "PhotonUnityNetworking": "1.0.0",
+          "PhotonUnityNetworking.Editor": "1.0.0",
+          "PhotonUnityNetworking.Utilities": "1.0.0",
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.dll": {}
+        }
+      },
+      "PunDemos.DemoHubEditor/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "PhotonRealtime": "1.0.0",
+          "PhotonUnityNetworking": "1.0.0",
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PunDemos.DemoHubEditor.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PunDemos.DemoHubEditor.dll": {}
+        }
+      },
+      "PunDemos.DemoSlotcarEditor/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "PhotonUnityNetworking.Demos": "1.0.0",
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PunDemos.DemoSlotcarEditor.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PunDemos.DemoSlotcarEditor.dll": {}
+        }
+      },
+      "UnityEditor.UI/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/UnityEditor.UI.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UnityEditor.UI.dll": {}
+        }
+      },
+      "UnityEngine.UI/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/UnityEngine.UI.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UnityEngine.UI.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PhotonChat/1.0.0": {
+      "type": "project",
+      "path": "PhotonChat.csproj",
+      "msbuildProject": "PhotonChat.csproj"
+    },
+    "PhotonRealtime/1.0.0": {
+      "type": "project",
+      "path": "PhotonRealtime.csproj",
+      "msbuildProject": "PhotonRealtime.csproj"
+    },
+    "PhotonUnityNetworking/1.0.0": {
+      "type": "project",
+      "path": "PhotonUnityNetworking.csproj",
+      "msbuildProject": "PhotonUnityNetworking.csproj"
+    },
+    "PhotonUnityNetworking.Demos/1.0.0": {
+      "type": "project",
+      "path": "PhotonUnityNetworking.Demos.csproj",
+      "msbuildProject": "PhotonUnityNetworking.Demos.csproj"
+    },
+    "PhotonUnityNetworking.Editor/1.0.0": {
+      "type": "project",
+      "path": "PhotonUnityNetworking.Editor.csproj",
+      "msbuildProject": "PhotonUnityNetworking.Editor.csproj"
+    },
+    "PhotonUnityNetworking.Utilities/1.0.0": {
+      "type": "project",
+      "path": "PhotonUnityNetworking.Utilities.csproj",
+      "msbuildProject": "PhotonUnityNetworking.Utilities.csproj"
+    },
+    "PhotonUnityNetworking.Utilities.Culling.Editor/1.0.0": {
+      "type": "project",
+      "path": "PhotonUnityNetworking.Utilities.Culling.Editor.csproj",
+      "msbuildProject": "PhotonUnityNetworking.Utilities.Culling.Editor.csproj"
+    },
+    "PhotonUnityNetworking.Utilities.PhotonPlayer.Editor/1.0.0": {
+      "type": "project",
+      "path": "PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.csproj",
+      "msbuildProject": "PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.csproj"
+    },
+    "PunDemos.DemoHubEditor/1.0.0": {
+      "type": "project",
+      "path": "PunDemos.DemoHubEditor.csproj",
+      "msbuildProject": "PunDemos.DemoHubEditor.csproj"
+    },
+    "PunDemos.DemoSlotcarEditor/1.0.0": {
+      "type": "project",
+      "path": "PunDemos.DemoSlotcarEditor.csproj",
+      "msbuildProject": "PunDemos.DemoSlotcarEditor.csproj"
+    },
+    "UnityEditor.UI/1.0.0": {
+      "type": "project",
+      "path": "UnityEditor.UI.csproj",
+      "msbuildProject": "UnityEditor.UI.csproj"
+    },
+    "UnityEngine.UI/1.0.0": {
+      "type": "project",
+      "path": "UnityEngine.UI.csproj",
+      "msbuildProject": "UnityEngine.UI.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETStandard,Version=v2.1": [
+      "PhotonChat >= 1.0.0",
+      "PhotonRealtime >= 1.0.0",
+      "PhotonUnityNetworking >= 1.0.0",
+      "PhotonUnityNetworking.Demos >= 1.0.0",
+      "PhotonUnityNetworking.Editor >= 1.0.0",
+      "PhotonUnityNetworking.Utilities >= 1.0.0",
+      "PhotonUnityNetworking.Utilities.Culling.Editor >= 1.0.0",
+      "PhotonUnityNetworking.Utilities.PhotonPlayer.Editor >= 1.0.0",
+      "PunDemos.DemoHubEditor >= 1.0.0",
+      "PunDemos.DemoSlotcarEditor >= 1.0.0",
+      "UnityEditor.UI >= 1.0.0",
+      "UnityEngine.UI >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/henrychang/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/henrychang/Desktop/Unity/FamineGame3D/Assembly-CSharp.csproj",
+      "projectName": "Assembly-CSharp",
+      "projectPath": "/Users/henrychang/Desktop/Unity/FamineGame3D/Assembly-CSharp.csproj",
+      "packagesPath": "/Users/henrychang/.nuget/packages/",
+      "outputPath": "/Users/henrychang/Desktop/Unity/FamineGame3D/Temp/obj/Debug/Assembly-CSharp/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/henrychang/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "netstandard2.1"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "projectReferences": {
+            "/Users/henrychang/Desktop/Unity/FamineGame3D/PhotonChat.csproj": {
+              "projectPath": "/Users/henrychang/Desktop/Unity/FamineGame3D/PhotonChat.csproj"
+            },
+            "/Users/henrychang/Desktop/Unity/FamineGame3D/PhotonRealtime.csproj": {
+              "projectPath": "/Users/henrychang/Desktop/Unity/FamineGame3D/PhotonRealtime.csproj"
+            },
+            "/Users/henrychang/Desktop/Unity/FamineGame3D/PhotonUnityNetworking.csproj": {
+              "projectPath": "/Users/henrychang/Desktop/Unity/FamineGame3D/PhotonUnityNetworking.csproj"
+            },
+            "/Users/henrychang/Desktop/Unity/FamineGame3D/PhotonUnityNetworking.Demos.csproj": {
+              "projectPath": "/Users/henrychang/Desktop/Unity/FamineGame3D/PhotonUnityNetworking.Demos.csproj"
+            },
+            "/Users/henrychang/Desktop/Unity/FamineGame3D/PhotonUnityNetworking.Editor.csproj": {
+              "projectPath": "/Users/henrychang/Desktop/Unity/FamineGame3D/PhotonUnityNetworking.Editor.csproj"
+            },
+            "/Users/henrychang/Desktop/Unity/FamineGame3D/PhotonUnityNetworking.Utilities.csproj": {
+              "projectPath": "/Users/henrychang/Desktop/Unity/FamineGame3D/PhotonUnityNetworking.Utilities.csproj"
+            },
+            "/Users/henrychang/Desktop/Unity/FamineGame3D/PhotonUnityNetworking.Utilities.Culling.Editor.csproj": {
+              "projectPath": "/Users/henrychang/Desktop/Unity/FamineGame3D/PhotonUnityNetworking.Utilities.Culling.Editor.csproj"
+            },
+            "/Users/henrychang/Desktop/Unity/FamineGame3D/PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.csproj": {
+              "projectPath": "/Users/henrychang/Desktop/Unity/FamineGame3D/PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.csproj"
+            },
+            "/Users/henrychang/Desktop/Unity/FamineGame3D/PunDemos.DemoHubEditor.csproj": {
+              "projectPath": "/Users/henrychang/Desktop/Unity/FamineGame3D/PunDemos.DemoHubEditor.csproj"
+            },
+            "/Users/henrychang/Desktop/Unity/FamineGame3D/PunDemos.DemoSlotcarEditor.csproj": {
+              "projectPath": "/Users/henrychang/Desktop/Unity/FamineGame3D/PunDemos.DemoSlotcarEditor.csproj"
+            },
+            "/Users/henrychang/Desktop/Unity/FamineGame3D/UnityEditor.UI.csproj": {
+              "projectPath": "/Users/henrychang/Desktop/Unity/FamineGame3D/UnityEditor.UI.csproj"
+            },
+            "/Users/henrychang/Desktop/Unity/FamineGame3D/UnityEngine.UI.csproj": {
+              "projectPath": "/Users/henrychang/Desktop/Unity/FamineGame3D/UnityEngine.UI.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "netstandard2.1": {
+        "targetAlias": "netstandard2.1",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
