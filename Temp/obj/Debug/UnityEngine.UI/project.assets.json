@@ -8,19 +8,19 @@
     ".NETStandard,Version=v2.1": []
   },
   "packageFolders": {
-    "/Users/henrychang/.nuget/packages/": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/henrychang/Desktop/Unity/FamineGame3D/UnityEngine.UI.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEngine.UI.csproj",
       "projectName": "UnityEngine.UI",
-      "projectPath": "/Users/henrychang/Desktop/Unity/FamineGame3D/UnityEngine.UI.csproj",
-      "packagesPath": "/Users/henrychang/.nuget/packages/",
-      "outputPath": "/Users/henrychang/Desktop/Unity/FamineGame3D/Temp/obj/Debug/UnityEngine.UI/",
+      "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEngine.UI.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\Temp/obj/Debug/UnityEngine.UI\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/henrychang/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.1"
@@ -59,7 +59,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

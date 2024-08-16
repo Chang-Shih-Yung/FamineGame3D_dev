@@ -129,19 +129,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/henrychang/.nuget/packages/": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/henrychang/Desktop/Unity/FamineGame3D/PunDemos.DemoSlotcarEditor.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PunDemos.DemoSlotcarEditor.csproj",
       "projectName": "PunDemos.DemoSlotcarEditor",
-      "projectPath": "/Users/henrychang/Desktop/Unity/FamineGame3D/PunDemos.DemoSlotcarEditor.csproj",
-      "packagesPath": "/Users/henrychang/.nuget/packages/",
-      "outputPath": "/Users/henrychang/Desktop/Unity/FamineGame3D/Temp/obj/Debug/PunDemos.DemoSlotcarEditor/",
+      "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PunDemos.DemoSlotcarEditor.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\Temp/obj/Debug/PunDemos.DemoSlotcarEditor\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/henrychang/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.1"
@@ -153,14 +153,14 @@
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
           "projectReferences": {
-            "/Users/henrychang/Desktop/Unity/FamineGame3D/PhotonUnityNetworking.Demos.csproj": {
-              "projectPath": "/Users/henrychang/Desktop/Unity/FamineGame3D/PhotonUnityNetworking.Demos.csproj"
+            "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.Demos.csproj": {
+              "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.Demos.csproj"
             },
-            "/Users/henrychang/Desktop/Unity/FamineGame3D/UnityEditor.UI.csproj": {
-              "projectPath": "/Users/henrychang/Desktop/Unity/FamineGame3D/UnityEditor.UI.csproj"
+            "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEditor.UI.csproj": {
+              "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEditor.UI.csproj"
             },
-            "/Users/henrychang/Desktop/Unity/FamineGame3D/UnityEngine.UI.csproj": {
-              "projectPath": "/Users/henrychang/Desktop/Unity/FamineGame3D/UnityEngine.UI.csproj"
+            "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEngine.UI.csproj": {
+              "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEngine.UI.csproj"
             }
           }
         }
@@ -190,7 +190,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

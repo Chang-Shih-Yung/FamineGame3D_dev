@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/henrychang/Desktop/Unity/FamineGame3D/PhotonRealtime.csproj": {}
+    "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonRealtime.csproj": {}
   },
   "projects": {
-    "/Users/henrychang/Desktop/Unity/FamineGame3D/PhotonRealtime.csproj": {
+    "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonRealtime.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/henrychang/Desktop/Unity/FamineGame3D/PhotonRealtime.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonRealtime.csproj",
         "projectName": "PhotonRealtime",
-        "projectPath": "/Users/henrychang/Desktop/Unity/FamineGame3D/PhotonRealtime.csproj",
-        "packagesPath": "/Users/henrychang/.nuget/packages/",
-        "outputPath": "/Users/henrychang/Desktop/Unity/FamineGame3D/Temp/obj/Debug/PhotonRealtime/",
+        "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonRealtime.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\Temp/obj/Debug/PhotonRealtime\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/henrychang/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
@@ -26,11 +26,11 @@
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "/Users/henrychang/Desktop/Unity/FamineGame3D/UnityEditor.UI.csproj": {
-                "projectPath": "/Users/henrychang/Desktop/Unity/FamineGame3D/UnityEditor.UI.csproj"
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEditor.UI.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEditor.UI.csproj"
               },
-              "/Users/henrychang/Desktop/Unity/FamineGame3D/UnityEngine.UI.csproj": {
-                "projectPath": "/Users/henrychang/Desktop/Unity/FamineGame3D/UnityEngine.UI.csproj"
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEngine.UI.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEngine.UI.csproj"
               }
             }
           }
@@ -60,21 +60,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/henrychang/Desktop/Unity/FamineGame3D/UnityEditor.UI.csproj": {
+    "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEditor.UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/henrychang/Desktop/Unity/FamineGame3D/UnityEditor.UI.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEditor.UI.csproj",
         "projectName": "UnityEditor.UI",
-        "projectPath": "/Users/henrychang/Desktop/Unity/FamineGame3D/UnityEditor.UI.csproj",
-        "packagesPath": "/Users/henrychang/.nuget/packages/",
-        "outputPath": "/Users/henrychang/Desktop/Unity/FamineGame3D/Temp/obj/Debug/UnityEditor.UI/",
+        "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEditor.UI.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\Temp/obj/Debug/UnityEditor.UI\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/henrychang/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
@@ -86,8 +86,8 @@
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "/Users/henrychang/Desktop/Unity/FamineGame3D/UnityEngine.UI.csproj": {
-                "projectPath": "/Users/henrychang/Desktop/Unity/FamineGame3D/UnityEngine.UI.csproj"
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEngine.UI.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEngine.UI.csproj"
               }
             }
           }
@@ -117,21 +117,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/henrychang/Desktop/Unity/FamineGame3D/UnityEngine.UI.csproj": {
+    "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEngine.UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/henrychang/Desktop/Unity/FamineGame3D/UnityEngine.UI.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEngine.UI.csproj",
         "projectName": "UnityEngine.UI",
-        "projectPath": "/Users/henrychang/Desktop/Unity/FamineGame3D/UnityEngine.UI.csproj",
-        "packagesPath": "/Users/henrychang/.nuget/packages/",
-        "outputPath": "/Users/henrychang/Desktop/Unity/FamineGame3D/Temp/obj/Debug/UnityEngine.UI/",
+        "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEngine.UI.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\Temp/obj/Debug/UnityEngine.UI\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/henrychang/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
@@ -170,7 +170,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
