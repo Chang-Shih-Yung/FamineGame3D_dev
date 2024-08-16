@@ -1,0 +1,158 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETStandard,Version=v2.1": {
+      "PhotonRealtime/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PhotonRealtime.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PhotonRealtime.dll": {}
+        }
+      },
+      "PhotonUnityNetworking/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "PhotonRealtime": "1.0.0",
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PhotonUnityNetworking.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PhotonUnityNetworking.dll": {}
+        }
+      },
+      "UnityEditor.UI/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/UnityEditor.UI.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UnityEditor.UI.dll": {}
+        }
+      },
+      "UnityEngine.UI/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/UnityEngine.UI.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UnityEngine.UI.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PhotonRealtime/1.0.0": {
+      "type": "project",
+      "path": "PhotonRealtime.csproj",
+      "msbuildProject": "PhotonRealtime.csproj"
+    },
+    "PhotonUnityNetworking/1.0.0": {
+      "type": "project",
+      "path": "PhotonUnityNetworking.csproj",
+      "msbuildProject": "PhotonUnityNetworking.csproj"
+    },
+    "UnityEditor.UI/1.0.0": {
+      "type": "project",
+      "path": "UnityEditor.UI.csproj",
+      "msbuildProject": "UnityEditor.UI.csproj"
+    },
+    "UnityEngine.UI/1.0.0": {
+      "type": "project",
+      "path": "UnityEngine.UI.csproj",
+      "msbuildProject": "UnityEngine.UI.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETStandard,Version=v2.1": [
+      "PhotonRealtime >= 1.0.0",
+      "PhotonUnityNetworking >= 1.0.0",
+      "UnityEditor.UI >= 1.0.0",
+      "UnityEngine.UI >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/henrychang/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/henrychang/Desktop/Unity/FamineGame3D/PhotonUnityNetworking.Utilities.csproj",
+      "projectName": "PhotonUnityNetworking.Utilities",
+      "projectPath": "/Users/henrychang/Desktop/Unity/FamineGame3D/PhotonUnityNetworking.Utilities.csproj",
+      "packagesPath": "/Users/henrychang/.nuget/packages/",
+      "outputPath": "/Users/henrychang/Desktop/Unity/FamineGame3D/Temp/obj/Debug/PhotonUnityNetworking.Utilities/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/henrychang/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "netstandard2.1"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "projectReferences": {
+            "/Users/henrychang/Desktop/Unity/FamineGame3D/PhotonRealtime.csproj": {
+              "projectPath": "/Users/henrychang/Desktop/Unity/FamineGame3D/PhotonRealtime.csproj"
+            },
+            "/Users/henrychang/Desktop/Unity/FamineGame3D/PhotonUnityNetworking.csproj": {
+              "projectPath": "/Users/henrychang/Desktop/Unity/FamineGame3D/PhotonUnityNetworking.csproj"
+            },
+            "/Users/henrychang/Desktop/Unity/FamineGame3D/UnityEditor.UI.csproj": {
+              "projectPath": "/Users/henrychang/Desktop/Unity/FamineGame3D/UnityEditor.UI.csproj"
+            },
+            "/Users/henrychang/Desktop/Unity/FamineGame3D/UnityEngine.UI.csproj": {
+              "projectPath": "/Users/henrychang/Desktop/Unity/FamineGame3D/UnityEngine.UI.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "netstandard2.1": {
+        "targetAlias": "netstandard2.1",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
