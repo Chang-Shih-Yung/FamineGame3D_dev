@@ -1,0 +1,4 @@
+repository "FamineGame3D_dev@HenryChang0921@cloud"
+  path "/"
+    br "/main"
+    co "/main"
