@@ -1,0 +1,178 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.Editor.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonRealtime.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonRealtime.csproj",
+        "projectName": "PhotonRealtime",
+        "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonRealtime.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\Temp\\obj\\Debug\\PhotonRealtime\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.csproj",
+        "projectName": "PhotonUnityNetworking",
+        "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\Temp\\obj\\Debug\\PhotonUnityNetworking\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonRealtime.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonRealtime.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.Editor.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.Editor.csproj",
+        "projectName": "PhotonUnityNetworking.Editor",
+        "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.Editor.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\Temp\\obj\\Debug\\PhotonUnityNetworking.Editor\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonRealtime.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonRealtime.csproj"
+              },
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
