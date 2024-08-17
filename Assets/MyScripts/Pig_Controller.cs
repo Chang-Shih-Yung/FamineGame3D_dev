@@ -42,7 +42,7 @@ public class Pig_Controller : ObjectBase
     public float maxX = 4.74f;
     public float minX = -5.63f;
     public float maxZ = 5.92f;
-    public float minZ = -6.39f;
+    public float minZ = -6.3444f;
 
     //目標位置
     private Vector3 targetPos;
