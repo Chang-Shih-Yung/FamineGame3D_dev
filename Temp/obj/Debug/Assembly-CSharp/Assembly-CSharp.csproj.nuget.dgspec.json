@@ -1,0 +1,856 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\Assembly-CSharp.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\Assembly-CSharp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\Assembly-CSharp.csproj",
+        "projectName": "Assembly-CSharp",
+        "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\Assembly-CSharp.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\Temp/obj/Debug/Assembly-CSharp\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonChat.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonChat.csproj"
+              },
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonRealtime.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonRealtime.csproj"
+              },
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.csproj"
+              },
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.Demos.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.Demos.csproj"
+              },
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.Editor.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.Editor.csproj"
+              },
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.Utilities.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.Utilities.csproj"
+              },
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.Utilities.Culling.Editor.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.Utilities.Culling.Editor.csproj"
+              },
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.csproj"
+              },
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PunDemos.DemoHubEditor.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PunDemos.DemoHubEditor.csproj"
+              },
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PunDemos.DemoSlotcarEditor.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PunDemos.DemoSlotcarEditor.csproj"
+              },
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEditor.UI.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEditor.UI.csproj"
+              },
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEngine.UI.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonChat.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonChat.csproj",
+        "projectName": "PhotonChat",
+        "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonChat.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\Temp/obj/Debug/PhotonChat\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEditor.UI.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEditor.UI.csproj"
+              },
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEngine.UI.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonRealtime.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonRealtime.csproj",
+        "projectName": "PhotonRealtime",
+        "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonRealtime.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\Temp/obj/Debug/PhotonRealtime\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEditor.UI.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEditor.UI.csproj"
+              },
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEngine.UI.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.csproj",
+        "projectName": "PhotonUnityNetworking",
+        "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\Temp/obj/Debug/PhotonUnityNetworking\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonRealtime.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonRealtime.csproj"
+              },
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEditor.UI.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEditor.UI.csproj"
+              },
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEngine.UI.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.Demos.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.Demos.csproj",
+        "projectName": "PhotonUnityNetworking.Demos",
+        "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.Demos.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\Temp/obj/Debug/PhotonUnityNetworking.Demos\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonRealtime.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonRealtime.csproj"
+              },
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.csproj"
+              },
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.Utilities.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.Utilities.csproj"
+              },
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEditor.UI.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEditor.UI.csproj"
+              },
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEngine.UI.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.Editor.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.Editor.csproj",
+        "projectName": "PhotonUnityNetworking.Editor",
+        "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.Editor.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\Temp/obj/Debug/PhotonUnityNetworking.Editor\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonRealtime.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonRealtime.csproj"
+              },
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.csproj"
+              },
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEditor.UI.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEditor.UI.csproj"
+              },
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEngine.UI.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.Utilities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.Utilities.csproj",
+        "projectName": "PhotonUnityNetworking.Utilities",
+        "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.Utilities.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\Temp/obj/Debug/PhotonUnityNetworking.Utilities\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonRealtime.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonRealtime.csproj"
+              },
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.csproj"
+              },
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEditor.UI.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEditor.UI.csproj"
+              },
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEngine.UI.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.Utilities.Culling.Editor.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.Utilities.Culling.Editor.csproj",
+        "projectName": "PhotonUnityNetworking.Utilities.Culling.Editor",
+        "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.Utilities.Culling.Editor.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\Temp/obj/Debug/PhotonUnityNetworking.Utilities.Culling.Editor\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.Utilities.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.Utilities.csproj"
+              },
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEditor.UI.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEditor.UI.csproj"
+              },
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEngine.UI.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.csproj",
+        "projectName": "PhotonUnityNetworking.Utilities.PhotonPlayer.Editor",
+        "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\Temp/obj/Debug/PhotonUnityNetworking.Utilities.PhotonPlayer.Editor\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonRealtime.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonRealtime.csproj"
+              },
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.csproj"
+              },
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.Editor.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.Editor.csproj"
+              },
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.Utilities.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.Utilities.csproj"
+              },
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEditor.UI.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEditor.UI.csproj"
+              },
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEngine.UI.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PunDemos.DemoHubEditor.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PunDemos.DemoHubEditor.csproj",
+        "projectName": "PunDemos.DemoHubEditor",
+        "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PunDemos.DemoHubEditor.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\Temp/obj/Debug/PunDemos.DemoHubEditor\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonRealtime.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonRealtime.csproj"
+              },
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.csproj"
+              },
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEditor.UI.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEditor.UI.csproj"
+              },
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEngine.UI.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PunDemos.DemoSlotcarEditor.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PunDemos.DemoSlotcarEditor.csproj",
+        "projectName": "PunDemos.DemoSlotcarEditor",
+        "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PunDemos.DemoSlotcarEditor.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\Temp/obj/Debug/PunDemos.DemoSlotcarEditor\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.Demos.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\PhotonUnityNetworking.Demos.csproj"
+              },
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEditor.UI.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEditor.UI.csproj"
+              },
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEngine.UI.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEditor.UI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEditor.UI.csproj",
+        "projectName": "UnityEditor.UI",
+        "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEditor.UI.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\Temp/obj/Debug/UnityEditor.UI\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEngine.UI.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEngine.UI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEngine.UI.csproj",
+        "projectName": "UnityEngine.UI",
+        "projectPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\UnityEngine.UI.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\UnityProject\\FamineGame3D_dev\\Temp/obj/Debug/UnityEngine.UI\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
