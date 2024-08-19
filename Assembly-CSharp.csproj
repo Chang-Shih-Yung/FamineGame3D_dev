@@ -79,6 +79,7 @@
     <Compile Include="Assets/Photon/PhotonChat/Demos/DemoChat/FriendItem.cs" />
     <Compile Include="Assets/MyScripts/ObjectBase.cs" />
     <Compile Include="Assets/MyScripts/Tree_Controller.cs" />
+    <Compile Include="Assets/MyScripts/UI_BagPanel.cs" />
     <Compile Include="Assets/MyScripts/PlayerController.cs" />
     <Compile Include="Assets/Photon/PhotonChat/Demos/DemoChat/IgnoreUiRaycastWhenInactive.cs" />
     <Compile Include="Assets/Photon/PhotonChat/Demos/Common/EventSystemSpawner.cs" />

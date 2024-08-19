@@ -46,6 +46,8 @@ public class Pig_Controller : ObjectBase
 
     //目標位置
     private Vector3 targetPos;
+    // 目標方向的旋轉
+    private Quaternion targetRotation;
 
     private EnemyState enemyState;
     //將enemyState改為屬性（原本是變量），下方可以設置get和set狀態變化時的行為
@@ -87,8 +89,10 @@ public class Pig_Controller : ObjectBase
                     break;
                 case EnemyState.Attack:
                     animator.CrossFadeInFixedTime("Attack", 0.25f);
-                    //強行面向玩家
-                    transform.LookAt(PlayerController.instance.transform);
+                    //單純強行面向玩家寫法
+                    // transform.LookAt(PlayerController.instance.transform);
+                    //轉向玩家座標（目標減自己）
+                    targetRotation = Quaternion.LookRotation(PlayerController.instance.transform.position - transform.position);
                     navMeshAgent.enabled = false;
                     break;
                 case EnemyState.Hurt:
@@ -143,6 +147,7 @@ public class Pig_Controller : ObjectBase
                 if (Vector3.Distance(transform.position, PlayerController.instance.transform.position) < 1f)
                 {
                     //追到了，攻擊
+                    //會一直攻擊，就是這裡一直更新觸發
                     EnemyState = EnemyState.Attack;
                 }
                 else
@@ -151,10 +156,13 @@ public class Pig_Controller : ObjectBase
                     navMeshAgent.SetDestination(PlayerController.instance.transform.position);
                 }
                 break;
-            //以下是瞬間觸發，沒什麼是要一直更新的，所以理論上可以刪了
+            //攻擊狀態更新
             case EnemyState.Attack:
-
+                //平滑轉向，看向玩家
+                //這裡轉向就算不放在更新裡面放在上面，Attack每一次更新也還是會不斷觸發。但是理論要更新的都放在更新會比較不容易出錯
+                transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 10); // 10 是轉向速度，可以根據需要調整
                 break;
+            //以下是瞬間觸發，沒什麼是要一直更新的，所以理論上可以刪了
             case EnemyState.Hurt:
 
                 break;
@@ -192,12 +200,12 @@ public class Pig_Controller : ObjectBase
             EnemyState = EnemyState.Die;
         }
     }
+    //覆寫ObjectBase
     protected override void Dead()
     {
         base.Dead();
-        //死亡後，關閉碰撞器
         EnemyState = EnemyState.Die;
-        checkCollider.enabled = false;
+        //1.5秒後銷毀物體（等動畫播完一下）
         Destroy(gameObject, 1.5f);
 
     }
@@ -220,6 +228,7 @@ public class Pig_Controller : ObjectBase
         if (EnemyState != EnemyState.Die) EnemyState = EnemyState.Pursue;
     }
     //野豬受傷結束
+    //動畫中釘上的事件，當受傷動畫播放完畢時判斷：如果還沒死，就繼續切換到追擊狀態
     private void HurtOver()
     {
         //狀態為：不死就追擊

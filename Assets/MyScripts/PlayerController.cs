@@ -24,6 +24,9 @@ public class PlayerController : ObjectBase
     //初始化是否為攻擊狀態
     private bool isAttacking = false;
 
+    //是否在受傷中
+    private bool isHurting = false;
+
 
     private float hungry = 100;
     //重構：將hungry改為屬性   
@@ -69,8 +72,8 @@ public class PlayerController : ObjectBase
     private void Update()
     {
         UpdateHungry();
-        //假設一開始不是攻擊狀態
-        if (!isAttacking)
+        //假設不是攻擊狀態，同時也不是受傷狀態，才能移動或發起攻擊
+        if (!isAttacking && !isHurting)
         {
             //可以移動可以觸發攻擊事件
             Moving();
@@ -115,7 +118,7 @@ public class PlayerController : ObjectBase
         Vector3 move = new Vector3(h, 0, v);
         //處理實際移動以及跟動畫狀態機的連結
         //if (move != Vector3.zero)
-        if (h != 0 || v != 0)
+        if (move != Vector3.zero)
         {
             //抓動畫狀態機裡面的布爾值名稱，當移動時，walk布爾值為true，然後就會從idle到walk
             animator.SetBool("Walk", true);
@@ -123,7 +126,7 @@ public class PlayerController : ObjectBase
             targetDirRotation = Quaternion.LookRotation(move);
             //從起點到終點的旋轉，然後用slerp插值，使轉向更加平滑
             //当前对象的旋转，目标旋转，插值
-            transform.rotation = Quaternion.Slerp(transform.rotation, targetDirRotation, 0.05f);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetDirRotation, 0.02f);
 
             //處理實際移動(moveSpeed不寫死，可以在面板中調整)
             //SimpleMove搭配normalized歸一化
@@ -149,6 +152,16 @@ public class PlayerController : ObjectBase
         Hungry -= Time.deltaTime * 3;
 
     }
+
+    public override void Hurt(int damage)
+    {
+        base.Hurt(damage);
+        //播放受傷動畫
+        animator.SetTrigger("Hurt");
+        PlayAudio(2);
+        isHurting = true;
+    }
+
     //當hp變化時自動調用，很多時候都會觸發hp更新，所以寫在別的地方，這邊調用
     //Hp是ObjectBase裡面的屬性，所以這邊可以調用
     protected override void OnHpUpdate()
@@ -159,7 +172,8 @@ public class PlayerController : ObjectBase
 
 
     //動畫中安插的事件
-    //在動畫編輯器中加上的攻擊事件，在動畫編輯器上就是調用了這個方法
+    //在動畫編輯器中加上的攻擊事件，在這就是調用了這個方法
+
     private void StartHit()
     {
         //播放音效
@@ -175,5 +189,10 @@ public class PlayerController : ObjectBase
         checkCollider.StopHit();
         //攻擊結束，回到原本的狀態
         isAttacking = false;
+    }
+
+    private void HurtOver()
+    {
+        isHurting = false;
     }
 }

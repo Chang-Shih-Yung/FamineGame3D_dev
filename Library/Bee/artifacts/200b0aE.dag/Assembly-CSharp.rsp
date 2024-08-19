@@ -378,6 +378,7 @@
 "Assets/MyScripts/Pig_Controller.cs"
 "Assets/MyScripts/PlayerController.cs"
 "Assets/MyScripts/Tree_Controller.cs"
+"Assets/MyScripts/UI_BagPanel.cs"
 "Assets/Photon/PhotonChat/Demos/Common/EventSystemSpawner.cs"
 "Assets/Photon/PhotonChat/Demos/Common/OnStartDelete.cs"
 "Assets/Photon/PhotonChat/Demos/Common/TextButtonTransition.cs"
