@@ -11,7 +11,7 @@ public enum EnemyState
     Pursue, //追擊
     Attack, //攻擊
     Hurt, //受傷
-    Dead //死亡
+    Die //死亡
 }
 
 //野豬AI
@@ -98,8 +98,10 @@ public class Pig_Controller : ObjectBase
                     //取消導航
                     navMeshAgent.enabled = false;
                     break;
-                case EnemyState.Dead:
-
+                case EnemyState.Die:
+                    PlayAudio(0);
+                    navMeshAgent.enabled = false;
+                    animator.CrossFadeInFixedTime("Die", 0.25f);
                     break;
             }
 
@@ -124,7 +126,7 @@ public class Pig_Controller : ObjectBase
 
         switch (enemyState)
         {
-            //不會主動攻擊玩家，只會單純巡邏，沒啥好更新的，所以也可以刪掉
+            //不會主動攻擊玩家，只會單純巡邏，沒啥好持續更新的，所以也可以刪掉
             case EnemyState.Idle:
 
                 break;
@@ -138,7 +140,7 @@ public class Pig_Controller : ObjectBase
                 break;
             case EnemyState.Pursue:
                 //要一直追玩家:假設自己的位置與玩家的位置小於1f時
-                if(Vector3.Distance(transform.position, PlayerController.instance.transform.position)<1f)
+                if (Vector3.Distance(transform.position, PlayerController.instance.transform.position) < 1f)
                 {
                     //追到了，攻擊
                     EnemyState = EnemyState.Attack;
@@ -149,14 +151,14 @@ public class Pig_Controller : ObjectBase
                     navMeshAgent.SetDestination(PlayerController.instance.transform.position);
                 }
                 break;
-            //以下是瞬間觸發，所以理論上可以刪了
+            //以下是瞬間觸發，沒什麼是要一直更新的，所以理論上可以刪了
             case EnemyState.Attack:
 
                 break;
             case EnemyState.Hurt:
 
                 break;
-            case EnemyState.Dead:
+            case EnemyState.Die:
 
                 break;
         }
@@ -174,22 +176,31 @@ public class Pig_Controller : ObjectBase
 
     public override void Hurt(int damage)
     {
-        base.Hurt(damage);
+        //死了，無視玩家攻擊，否則鞭屍
+        if (EnemyState == EnemyState.Die) return;
+
         CancelInvoke(nameof(GoMove));//取消切換到移動狀態的延遲調用
-        if(Hp>0)
+        base.Hurt(damage);
+        if (Hp > 0)
         {
             //沒有死，切換到受傷動畫
             EnemyState = EnemyState.Hurt;
         }
         else
         {
-            //死了，死亡動畫
-            EnemyState = EnemyState.Dead;
+            //死了，死亡狀態
+            EnemyState = EnemyState.Die;
         }
-        animator.SetTrigger("Hurt");
-        EnemyState = EnemyState.Hurt;
     }
+    protected override void Dead()
+    {
+        base.Dead();
+        //死亡後，關閉碰撞器
+        EnemyState = EnemyState.Die;
+        checkCollider.enabled = false;
+        Destroy(gameObject, 1.5f);
 
+    }
     //動畫事件
     //動畫的Event可以看到這三個方法
     //攻擊碰撞開始
@@ -205,13 +216,14 @@ public class Pig_Controller : ObjectBase
     //整個攻擊結束
     private void StopAttack()
     {
-        //前提判斷
-        if (EnemyState != EnemyState.Dead) EnemyState = EnemyState.Pursue;
+        //前提判斷，狀態為：不死就追擊
+        if (EnemyState != EnemyState.Die) EnemyState = EnemyState.Pursue;
     }
     //野豬受傷結束
     private void HurtOver()
-    {   
-        //假設沒死，就追擊
-        if(EnemyState!=EnemyState.Dead) EnemyState = EnemyState.Pursue;
+    {
+        //狀態為：不死就追擊
+        if (EnemyState != EnemyState.Die) EnemyState = EnemyState.Pursue;
     }
+
 }

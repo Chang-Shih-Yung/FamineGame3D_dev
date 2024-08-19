@@ -82,6 +82,10 @@ public class PlayerController : ObjectBase
             //角色本人會一直轉向～直到攻擊結束:localRotation是相對於父物件的旋轉，而rotation是相對於世界的旋轉
             transform.localRotation = Quaternion.Slerp(transform.localRotation, targetDirRotation, Time.deltaTime * 10);
         }
+        // 讓角色的 Y 軸位置回到 0，避免角色飄浮
+        Vector3 position = transform.position;
+        position.y = Mathf.Lerp(position.y, 0, 1f);
+        transform.position = position;
     }
     //檢測攻擊事件
     public void Attack()
@@ -110,7 +114,8 @@ public class PlayerController : ObjectBase
         //將水平和垂直輸入轉換成 向量
         Vector3 move = new Vector3(h, 0, v);
         //處理實際移動以及跟動畫狀態機的連結
-        if (move != Vector3.zero)
+        //if (move != Vector3.zero)
+        if (h != 0 || v != 0)
         {
             //抓動畫狀態機裡面的布爾值名稱，當移動時，walk布爾值為true，然後就會從idle到walk
             animator.SetBool("Walk", true);
@@ -124,7 +129,7 @@ public class PlayerController : ObjectBase
             //SimpleMove搭配normalized歸一化
             // characterController.SimpleMove(move.normalized * moveSpeed);
 
-            //Move寫法，更有物理狀態一些，我自己比較愛這個移動的感覺
+            //Move寫法，更有物理狀態一些，我自己比較愛這個移動的感覺，但是重力問題就不會被解決，所以要額外自己加上重力
             characterController.Move(move * moveSpeed * Time.deltaTime);
         }
         else
