@@ -67,12 +67,22 @@ public class CheckCollider : MonoBehaviour
 
         //檢測拾取物品
         //看unity控制面板中itemTag欄位的有哪些tags
+        //將tags轉成enum枚舉類型，然後就會傳到ObjectBase基類中的AddItem方法
         if (itemTags.Contains(other.tag))
         {
-            //調用ObjectBase中的PlayAudio方法，播放音效。告訴宿主播放音效
-            //這裡就是寫死
-            Owner.PlayAudio(1);
-            Destroy(other.gameObject);//銷毀撿到的物品
+            /// <summary>
+            /// 檢測拾取物品
+            /// </summary>
+            //把撿到的東西tag轉成枚舉
+            //Parse是將tag字串類型轉換為Enum枚舉類型傳遞。然後就會傳到ObjectBase基類中的AddItem方法
+            ItemType itemType = System.Enum.Parse<ItemType>(other.tag);
+            Owner.AddItem(itemType);
+            //保險判斷：如果有添加成功，就播放音效與銷毀物品
+            if(Owner.AddItem(itemType))
+            {
+                Owner.PlayAudio(1);//調用ObjectBase中的PlayAudio方法，播放音效。告訴宿主播放音效
+                Destroy(other.gameObject);//銷毀撿到的物品
+            }
 
         }
     }

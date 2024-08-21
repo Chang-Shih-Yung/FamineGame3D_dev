@@ -59,7 +59,7 @@
     <UnityVersion>2022.3.16f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="/Users/henrychang/.vscode/extensions/visualstudiotoolsforunity.vstuc-1.0.2/Analyzers/Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="/Users/henrychang/.vscode/extensions/visualstudiotoolsforunity.vstuc-1.0.3/Analyzers/Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="/Applications/Unity/Hub/Editor/2022.3.16f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll" />
     <Analyzer Include="/Applications/Unity/Hub/Editor/2022.3.16f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
@@ -68,6 +68,7 @@
     <Compile Include="Assets/Res/粒子火/LightControl.cs" />
     <Compile Include="Assets/Photon/PhotonChat/Demos/DemoChat/AppSettingsExtensions.cs" />
     <Compile Include="Assets/MyScripts/CheckCollider.cs" />
+    <Compile Include="Assets/MyScripts/UI_BagPanelItem.cs" />
     <Compile Include="Assets/Photon/PhotonChat/Demos/Common/OnStartDelete.cs" />
     <Compile Include="Assets/Photon/PhotonChat/Demos/DemoChat/ChatGui.cs" />
     <Compile Include="Assets/Res/食物/Low Poly Fast Food/Demo/Scripts/Spin.cs" />
@@ -84,6 +85,7 @@
     <Compile Include="Assets/Photon/PhotonChat/Demos/DemoChat/IgnoreUiRaycastWhenInactive.cs" />
     <Compile Include="Assets/Photon/PhotonChat/Demos/Common/EventSystemSpawner.cs" />
     <Compile Include="Assets/Photon/PhotonChat/Demos/DemoChat/NamePickGui.cs" />
+    <Compile Include="Assets/MyScripts/ItemManager.cs" />
     <Compile Include="Assets/Photon/PhotonChat/Demos/Common/TextButtonTransition.cs" />
   </ItemGroup>
   <ItemGroup>

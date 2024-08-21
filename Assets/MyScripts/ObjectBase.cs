@@ -79,6 +79,13 @@ public class ObjectBase : MonoBehaviour
         Hp -= damage;
 
     }
+    //撿到東西，要知道是什麼 
+    //到角色控制那邊調用
+    public virtual bool AddItem(ItemType itemType)
+    {   
+        //預設是false
+        return false;
+    }
 
 }
 
