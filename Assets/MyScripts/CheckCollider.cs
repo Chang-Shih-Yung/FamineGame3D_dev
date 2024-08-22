@@ -7,7 +7,8 @@ using UnityEngine;
 public class CheckCollider : MonoBehaviour
 {
     //初始化
-    //讓碰撞物體知道是誰打的，取用ObjectBase的變量
+    //讓碰撞物體知道是誰打的，聲明一個ObjectBase基類的變量出來：主要是不寫死，這個碰撞體可以去綁任何物件
+    //為什麼是ObjectBase，因為：攻擊者都會是ObjectBase的子類：可能是玩家、野豬、野狗等等
     //Owner是攻擊者
     private ObjectBase Owner;
     //傷害值
@@ -19,11 +20,11 @@ public class CheckCollider : MonoBehaviour
     [SerializeField] List<string> itemTags = new List<string>();
 
     //初始化方法，可以從其他腳本傳入攻擊者和傷害值，目前是在角色底下，所以從PlayerController給值傳入
-    //如果放在怪物物件底下，那到時傳進來的就是怪物和傷害值，所以可以知道這個碰撞傷害腳本是可複用的
+    //如果放在怪物物件底下，那到時傳進來的就是怪物和傷害值，所以可以知道這個碰撞傷害腳本是可複用的：主要是不寫死，可以綁任何物件
     //這個init方法是給PlayerController使用的，所以是public
     public void Init(ObjectBase owner, int damage)
     {
-        //this的作用：區分變數和成員變數，有this的是成員變數、沒有this的是區域變數
+        //this的作用：區分變數和成員變數，有this的是成員變數、沒有this的是這個方法內的區域變數
         this.damage = damage;
         //啊不然前面的就改名字，這樣就不會有混淆
         Owner = owner;
@@ -76,11 +77,10 @@ public class CheckCollider : MonoBehaviour
             //把撿到的東西tag轉成枚舉
             //Parse是將tag字串類型轉換為Enum枚舉類型傳遞。然後就會傳到ObjectBase基類中的AddItem方法
             ItemType itemType = System.Enum.Parse<ItemType>(other.tag);
-            Owner.AddItem(itemType);
             //保險判斷：如果有添加成功，就播放音效與銷毀物品
             if(Owner.AddItem(itemType))
             {
-                Owner.PlayAudio(1);//調用ObjectBase中的PlayAudio方法，播放音效。告訴宿主播放音效
+                Owner.PlayAudio(1);//調用ObjectBase中的PlayAudio方法，播放音效。告訴宿主(player)播放音效
                 Destroy(other.gameObject);//銷毀撿到的物品
             }
 

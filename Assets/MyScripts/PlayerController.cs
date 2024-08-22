@@ -170,11 +170,11 @@ public class PlayerController : ObjectBase
         HpImage.fillAmount = Hp / 100;
     }
 
-    //調用ObjectBase中的AddItem方法，添加物品
+    //調用覆寫ObjectBase基類中的AddItem方法，添加物品
     public override bool AddItem(ItemType itemType)
     {
-        //檢測背包是否滿了
-        return base.AddItem(itemType);
+        //檢測背包是否有空格子，調用UI_BagPanel中的AddItem方法（就已經包含檢測方法了）
+        return UI_BagPanel.instance.AddItem(itemType);
     }
 
     //動畫中安插的事件

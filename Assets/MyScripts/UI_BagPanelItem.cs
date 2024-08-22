@@ -6,11 +6,14 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
 //後面兩個是：滑鼠進入、滑鼠退出
+//UI_BagPanelItem就是一個白匡＋物件的預製體
 public class UI_BagPanelItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     [SerializeField] Image bg;
     [SerializeField] Image icon;
-    public ItemDefine itemDefine;
+    //來自物品管理器的物品定義
+    //public意味著父組件 UI_BagPanel 中的for循環可以直接訪問
+    public ItemDefine thisItemDefine;
     private bool isSelect = false;
     public bool IsSelect
     {
@@ -39,13 +42,14 @@ public class UI_BagPanelItem : MonoBehaviour, IPointerEnterHandler, IPointerExit
         IsSelect = false;
     }
 
-    //初始化：如果傳一個null過來，相當於空格子邏輯
-    //來自物品管理器的物品定義
+    //初始化：一開始是空的。如果傳一個null過來，相當於空格子邏輯(物件訊息（itemDefine）是空的、圖片（icon）也是空的)
+    //來自物品管理器的物品定義(引數itemDefine)
     public void Init(ItemDefine itemDefine = null)
     {
-        this.itemDefine = itemDefine;
+        //thisItemDefine會等到東西(itemDefine就是將UI_BagPanel的GetItemDefine變數傳進來)傳進來賦值
+        thisItemDefine = itemDefine;
         isSelect = false;
-        if(this.itemDefine == null)
+        if(thisItemDefine == null)
         {
             //如果是空的，就不顯示
             //SetActive是啟用/禁用物件
@@ -55,7 +59,9 @@ public class UI_BagPanelItem : MonoBehaviour, IPointerEnterHandler, IPointerExit
         {   
             //不是空的，就顯示
             icon.gameObject.SetActive(true);
+            
             //顯示物品圖標（來自物品控制腳本）
+            //sprite是Unity中的一種圖片（Image）類型
             icon.sprite = itemDefine.ItemIcon;
         }
     }
