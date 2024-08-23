@@ -33,7 +33,7 @@ public class ItemDefine
     }
 }
 /// <summary>
-/// 物品管理器
+/// 物品管理器：MonoBehaviour
 /// </summary>
 public class ItemManager : MonoBehaviour
 {
@@ -46,7 +46,7 @@ public class ItemManager : MonoBehaviour
     {
         instance = this;//實例化
     }
-    //獲取物品定義：外界可以根據類型拿到物品配置
+    //獲取物品定義：外界可以根據類型拿到物品配置 
     //UI_BagPanel拿來用了
     public ItemDefine GetItemDefine(ItemType itemType)
     {   

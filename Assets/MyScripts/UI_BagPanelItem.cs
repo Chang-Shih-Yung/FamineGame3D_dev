@@ -6,7 +6,7 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
 //後面兩個是：滑鼠進入、滑鼠退出
-//UI_BagPanelItem就是一個白匡＋物件的預製體
+//UI_BagPanelItem整個就是一個白匡＋內容物件的預製體
 public class UI_BagPanelItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     [SerializeField] Image bg;
@@ -46,18 +46,18 @@ public class UI_BagPanelItem : MonoBehaviour, IPointerEnterHandler, IPointerExit
     //來自物品管理器的物品定義(引數itemDefine)
     public void Init(ItemDefine itemDefine = null)
     {
-        //thisItemDefine會等到東西(itemDefine就是將UI_BagPanel的GetItemDefine變數傳進來)傳進來賦值
+        //thisItemDefine會等到東西(itemDefine就是將ItemManager的GetItemDefine變數傳進來)傳進來賦值
         thisItemDefine = itemDefine;
         isSelect = false;
         if(thisItemDefine == null)
         {
-            //如果是空的，就不顯示
-            //SetActive是啟用/禁用物件
+            //如果是空的，就不顯示，
+            //gameObject.SetActive是啟用/禁用物件
             icon.gameObject.SetActive(false);
         }
         else
         {   
-            //不是空的，就顯示
+            //不是空的，就顯示，指的是顯示這個預製體
             icon.gameObject.SetActive(true);
             
             //顯示物品圖標（來自物品控制腳本）

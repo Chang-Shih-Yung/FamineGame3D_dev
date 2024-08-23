@@ -174,7 +174,8 @@ public class PlayerController : ObjectBase
     public override bool AddItem(ItemType itemType)
     {
         //檢測背包是否有空格子，調用UI_BagPanel中的AddItem方法（就已經包含檢測方法了）
-        return UI_BagPanel.instance.AddItem(itemType);
+        //指定UI_BagPanel的instance，然後調用AddItem方法
+        return UI_BagPanel.instance.AddItem_UIBagPanel(itemType);
     }
 
     //動畫中安插的事件

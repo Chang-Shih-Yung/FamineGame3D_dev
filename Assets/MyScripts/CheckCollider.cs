@@ -67,15 +67,15 @@ public class CheckCollider : MonoBehaviour
         }
 
         //檢測拾取物品
-        //看unity控制面板中itemTag欄位的有哪些tags
-        //將tags轉成enum枚舉類型，然後就會傳到ObjectBase基類中的AddItem方法
+        //看unity控制面板中itemTag欄位的有哪些tags >> 野豬的不要在面板中Item tags填寫標籤，就不會拾取
+        //將tags轉成enum枚舉類型，因為這個接口是追溯到ItemManager的enum枚舉類型
         if (itemTags.Contains(other.tag))
         {
             /// <summary>
             /// 檢測拾取物品
             /// </summary>
             //把撿到的東西tag轉成枚舉
-            //Parse是將tag字串類型轉換為Enum枚舉類型傳遞。然後就會傳到ObjectBase基類中的AddItem方法
+            //Parse是將tag字串類型轉換為Enum枚舉類型傳遞
             ItemType itemType = System.Enum.Parse<ItemType>(other.tag);
             //保險判斷：如果有添加成功，就播放音效與銷毀物品
             if(Owner.AddItem(itemType))
